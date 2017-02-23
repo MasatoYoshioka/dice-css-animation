@@ -1,0 +1,122 @@
+<!Doctype html>
+<html>
+  <head>
+    <title>dice</title>
+<style>
+.stage{
+  position: relative;
+  transform-style: preserve-3d;
+}
+.page{
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  text-align: center;
+  line-height: 100px;
+}
+.one{
+  background-color: blue;
+  transform: translateX(0) translateY(-50px) translateZ(0) rotateX(90deg) rotateY(0);
+}
+.two{
+  background-color: red;
+  animation: two 5s ease-in-out 0s infinite normal none running;
+}
+.three{
+  background-color: green;
+  animation: three 5s ease-in-out 0s infinite normal none running;
+}
+.four{
+  background-color: white;
+  animation: four 5s ease-in-out 0s infinite normal none running;
+}
+.five{
+  background-color: orange;
+  animation: five 5s ease-in-out 0s infinite normal none running;
+}
+.six{
+  background-color: red;
+  transform: translateX(0) translateY(50px) translateZ(0) rotateX(90deg) rotateY(0);
+}
+@keyframes two{
+  0%{
+  transform: translateX(0px) translateY(0) translateZ(-50px) rotateX(0) rotateY(0);
+  }
+  25%{
+  transform: translateX(50px) translateY(0) translateZ(0) rotateX(0) rotateY(90deg);
+  }
+  50%{
+  transform: translateX(0) translateY(0) translateZ(50px) rotateX(0) rotateY(0);
+  }
+  75%{
+  transform: translateX(-50px) translateY(0) translateZ(0) rotateX(0) rotateY(90deg);
+  }
+  100%{
+  transform: translateX(0px) translateY(0) translateZ(-50px) rotateX(0) rotateY(0);
+  }
+}
+@keyframes three{
+  0%{
+  transform: translateX(50px) translateY(0) translateZ(0) rotateX(0) rotateY(90deg);
+  }
+  25%{
+  transform: translateX(0) translateY(0) translateZ(50px) rotateX(0) rotateY(0);
+  }
+  50%{
+  transform: translateX(-50px) translateY(0) translateZ(0) rotateX(0) rotateY(-90deg);
+  }
+  75%{
+  transform: translateX(0px) translateY(0) translateZ(-50px) rotateX(0) rotateY(0);
+  }
+  100%{
+  transform: translateX(50px) translateY(0) translateZ(0) rotateX(0) rotateY(90deg);
+  }
+}
+@keyframes four{
+  0%{
+  transform: translateX(-50px) translateY(0) translateZ(0) rotateX(0) rotateY(-90deg);
+  }
+  25%{
+  transform: translateX(0px) translateY(0) translateZ(-50px) rotateX(0) rotateY(0);
+  }
+  50%{
+  transform: translateX(50px) translateY(0) translateZ(0) rotateX(0) rotateY(90deg);
+  }
+  75%{
+  transform: translateX(0px) translateY(0) translateZ(50px) rotateX(0) rotateY(0);
+  }
+  100%{
+  transform: translateX(-50px) translateY(0) translateZ(0) rotateX(0) rotateY(-90deg);
+  }
+}
+@keyframes five{
+  0%{
+  transform: translateX(0) translateY(0) translateZ(50px) rotateX(0) rotateY(0);
+  }
+  25%{
+  transform: translateX(-50px) translateY(0) translateZ(0) rotateX(0) rotateY(90deg);
+  }
+  50%{
+  transform: translateX(0px) translateY(0) translateZ(-50px) rotateX(0) rotateY(0);
+  }
+  75%{
+  transform: translateX(50px) translateY(0) translateZ(0) rotateX(0) rotateY(90deg);
+  }
+  100%{
+  transform: translateX(0) translateY(0) translateZ(50px) rotateX(0) rotateY(0);
+  }
+}
+</style>
+  </head>
+  <body>
+    <div class="stage">
+      <div class="one page">one</div>
+      <div class="two page">two</div>
+      <div class="three page">three</div>
+      <div class="four page">four</div>
+      <div class="five page">five</div>
+      <div class="six page">six</div>
+    </div>
+  </body>
+</html>
+
